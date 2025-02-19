@@ -795,6 +795,11 @@ font-size: 5rem;
     #trainer{
         margin-top: -15vh;
     }
+    .home-img::before{
+        font-size: 11rem;
+        top:20%!important;
+        left: 30%!important;
+    }
 }
 
 @media (max-width:617px) {
