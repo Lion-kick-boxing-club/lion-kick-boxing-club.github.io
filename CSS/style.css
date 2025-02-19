@@ -800,6 +800,9 @@ font-size: 5rem;
         top:20%!important;
         left: 30%!important;
     }
+    .form-container {
+        width: 40rem!important;
+    }
 }
 
 @media (max-width:617px) {
