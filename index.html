@@ -16,6 +16,18 @@
 </head>
 <body>
    
+     
+    <div id="chatbot-container">
+        <div id="chatbot-header">Asistent Virtual <span id="close-chat">&times;</span></div>
+        <div id="chatbot-messages"></div>
+        <input type="text" id="chatbot-input" placeholder="Scrie un mesaj...">
+        <button id="chatbot-send">Trimite</button>
+    </div>
+    <button id="chatbot-toggle">💬 Chat</button>
+    
+
+
+
     <header>
         <a href="#home" class="logo"><img src="imagini/logo.png" style="width: 70px; margin-bottom: -2vh;margin-top: -2vh;"></a>
         <div class="socialIcons">
@@ -77,43 +89,47 @@
 
     
 
-   <section class="services" id="services">
-    <h2 class="heading"  data-aos="zoom-in-down">Serviciile<span>Noastre</span> </h2>
-    <div class="services-content"  data-aos="zoom-in-up">
-       
-        <div class="row">
-            <img src="imagini/antrenamente-grup.jpg">
-            <h4>Antrenamente în grup</h4>
+    <section class="services" id="services">
+        <h2 class="heading" data-aos="zoom-in-down">Serviciile<span>Noastre</span> </h2>
+        <div class="services-content" data-aos="zoom-in-up">
+           
+            <div class="row">
+                <img src="imagini/antrenamente-grup.jpg">
+                <h4>Antrenamente în grup</h4>
+                <div class="description">Antrenează-te alături de alții pentru motivație și progres rapid.</div>
+            </div>
+    
+            <div class="row">
+                <img src="imagini/antrenamente-personale.jpg">
+                <h4>Antrenamente personale</h4>
+                <div class="description">Antrenamente 1-la-1 cu un instructor dedicat pentru rezultate rapide.</div>
+            </div>
+    
+            <div class="row">
+                <img src="imagini/fitness.jpg">
+                <h4>Fitness</h4>
+                <div class="description">Dezvoltă-ți forța, rezistența și flexibilitatea într-un mediu profesionist.</div>
+            </div>
+    
+            <div class="row">
+                <img src="imagini/organizare-evenimente-competitii.jpg">
+                <h4>Organizare de evenimente și competiții</h4>
+                <div class="description">Participă la competiții și evenimente pentru a-ți testa abilitățile.</div>
+            </div>
+    
+            <div class="row">
+                <img src="imagini/sesiuni-copii-adolescenti.jpg">
+                <h4>Sesiuni pentru copii și adolescenți</h4>
+                <div class="description">Antrenamente adaptate vârstei pentru dezvoltare fizică și mentală.</div>
+            </div>
+    
+            <div class="row">
+                <img src="imagini/leon1.jpg">
+                <h4>Cursuri de autoapărare</h4>
+                <div class="description">Învață tehnici esențiale de autoapărare pentru siguranța ta.</div>
+            </div>
         </div>
-
-        <div class="row">
-            <img src="imagini/antrenamente-personale.jpg">
-            <h4>Antrenamente personale</h4>
-        </div>
-
-        <div class="row">
-            <img src="imagini/fitness.jpg">
-            <h4>Fitness</h4>
-        </div>
-
-        <div class="row">
-            <img src="imagini/organizare-evenimente-competitii.jpg">
-            <h4>Organizare de evenimente si competitii</h4>
-            
-        </div>
-
-        <div class="row">
-            <img src="imagini/sesiuni-copii-adolescenti.jpg">
-            <h4>Sesiuni pentru copii și adolescenți</h4>
-            
-        </div>
-        <div class="row">
-            <img src="imagini/leon1.jpg">
-            <h4>Cursuri de autoapărare</h4>
-            
-        </div>
-    </div>
-   </section>
+    </section>
 
    <section class="about" id="about">
 <div class="about-img"  data-aos="zoom-in-down">
@@ -317,6 +333,7 @@
     duration: 1400,
   });
 </script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="./JavaScript/script.js"> </script>
 </body>
