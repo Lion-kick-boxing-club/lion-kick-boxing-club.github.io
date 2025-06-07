@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Lion, kick-box, sală, Ialoveni, Fitness, box">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="icon" href="imagini/logo1.png" type="imagini/jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Lion</title>
+</head>
+<body>
+   
+    <div class="form-container" id="goalsFormContainer">
+        <form id="goalsForm">
+          <h2 style="color: white; text-align: center;">Ваша цель</h2>
+      
+          <input type="number" id="weight" placeholder="Вес (кг)" required>
+          <input type="number" id="age" placeholder="Возраст" required>
+          <input type="number" id="height" placeholder="Рост (см)" required>
+      
+          <select id="gender" required>
+            <option value="">Пол</option>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+          </select>
+      
+          <select id="activity" required>
+            <option value="">Уровень активности</option>
+            <option value="1.2">Сидячий образ жизни (мало или совсем нет физ. активности)</option>
+            <option value="1.375">Легкая активность (1–3 дня в неделю)</option>
+            <option value="1.55">Умеренная активность (3–5 дней в неделю)</option>
+            <option value="1.725">Интенсивная активность (6–7 дней в неделю)</option>
+          </select>
+      
+          <select id="goal" required>
+            <option value="">Цель</option>
+            <option value="deficit">Снижение жировой массы</option>
+            <option value="mentinere">Поддержание веса</option>
+            <option value="surplus">Набор мышечной массы</option>
+          </select>
+      
+          <button type="submit">Показать рекомендации</button>
+          <button type="button" id="closeGoalsForm" style="margin-top: 5px; background: #333;">Закрыть</button>
+      
+          <div id="recommendations" style="margin-top: 15px; color: white;"></div>
+      
+        </form>
+      </div>
+      
+      
+
+
+
+
+     
+    <div id="chatbot-container">
+        <div id="chatbot-header">Виртуальный помощник <span id="close-chat">&times;</span></div>
+        <div id="chatbot-messages"></div>
+        <input type="text" id="chatbot-input" placeholder="написать сообщение...">
+        <button id="chatbot-send">Отправлять</button>
+    </div>
+    <button id="chatbot-toggle">💬 Chat</button>
+    
+
+
+
+    <header>
+        <a href="#home" class="logo"><img src="imagini/logo.png" style="width: 70px; margin-bottom: -2vh;margin-top: -2vh;"></a>
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/lionialoveni/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/lion_ialoveni/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+           <div class="language">
+            <a href="index2.html">EN</a>
+            <a href="index.html">RO</a>
+            <a href="index3.html">RU</a>
+           </div>
+        <ul class="navbar">
+<li><a href="#services">Услуги</a></li>
+<li><a href="#about">О нас</a></li>
+<li><a href="#plans">Цены</a></li>
+<li><a href="#contacte">Контакты</a></li>
+
+ </ul>  
+ 
+
+
+
+
+
+
+<div id="formContainer" class="form-container">
+    <form id="joinForm">
+        <h2>Join Us</h2>
+        <label for="firstName">Имя:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        
+        <label for="lastName">Имя:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Номер телефона:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <button type="submit">Отправлять</button>
+        <button type="button" id="closeForm">Закрывать</button>
+    </form>
+</div>
+
+<button id="goalsBtn" class="nav-btn">рекомендация</button>
+<div class="bx bx-menu" id="menu-icon" > </div>
+
+    </header>
+    <section class="home" id="home">
+        <div class="home-content" data-aos="zoom-in">
+
+<h3>Научись</h3>
+<h3>драться как настоящий</h3>
+<h3><span class="multiple-text"></span></h3>
+<h3><p>Будь лучшим бойцом</p></h3>
+<a href="#" class="btn join-btn" >Join Us</a>
+
+</div>
+<div class="home-img"  data-aos="zoom-in">
+    <img src="imagini//Untitled design-2.jpg" alt="Home Image">
+        </div>
+    </section>
+
+    
+
+    <section class="services" id="services">
+        <h2 class="heading" data-aos="zoom-in-down">Наши <span>услуги</span> </h2>
+        <div class="services-content" data-aos="zoom-in-up"> 
+        <div class="row">
+            <video class="service-video" muted loop preload="none" poster="imagini/poster1.jpg">
+                <source src="video/video1.mp4" type="video/mp4">
+            </video>
+            <h4>Групповое обучение</h4>
+            <div class="description">Тренируйтесь с другими для мотивации и быстрого прогресса.</div>
+        </div>
+        
+    
+            <div class="row">
+                <video class="service-video" muted loop preload="none" poster="imagini/poster2.jpg">
+                    <source src="video/video2.mp4" type="video/mp4">
+                </video>
+                <h4>Персональные тренировки</h4>
+                <div class="description">Индивидуальные тренировки с инструктором для быстрых результатов.</div>
+            </div>
+      
+
+    
+            <div class="row">
+                <video class="service-video" muted loop preload="none" poster="imagini/poster3.jpg">
+                    <source src="video/video3.mp4" type="video/mp4">
+                </video>
+                <h4>Фитнес</h4>
+                <div class="description">Развивайте свою силу, выносливость и гибкость в профессиональной среде.</div>
+            </div>
+    
+            <div class="row">
+                <video class="service-video" muted loop preload="none" poster="imagini/poster4.jpg">
+                    <source src="video/video4.mp4" type="video/mp4">
+                </video>
+                <h4>Организация мероприятий и конкурсов</h4>
+                <div class="description">Участвуйте в конкурсах и мероприятиях, чтобы проверить свои навыки.</div>
+            </div>
+    
+            <div class="row">
+                <video class="service-video" muted loop preload="none" poster="imagini/poster5.jpg">
+                    <source src="video/video5.mp4" type="video/mp4">
+                </video>
+                <h4>Занятия для детей и подростков</h4>
+                <div class="description">Соответствующие возрасту тренировки для физического и умственного развития.</div>
+            </div>
+    
+            <div class="row">
+                <video class="service-video" muted loop preload="none" poster="imagini/poster6.jpg">
+                    <source src="video/video6.mp4" type="video/mp4">
+                </video>
+                <h4>Курсы самообороны</h4>
+                <div class="description">Изучите основные приемы самообороны для вашей безопасности.</div>
+            </div>
+        </div>
+    </section>
+
+   <section class="about" id="about">
+<div class="about-img"  data-aos="zoom-in-down">
+    <video class="about-video" muted loop preload="none" >
+        <source src="video/videodd.mp4" type="video/mp4">
+    </video>
+</div>
+    
+
+
+<div class="about-content"  data-aos="zoom-in-up">
+    <h2 class="heading">Почему выбирают нас?</h2>
+
+    <p class="p1">Каждый спортсмен уникален, и наши тренировки адаптированы под твои цели — будь то поддержание формы или участие в соревнованиях.</p>
+    <p class="p1">Наш зал оснащён современным оборудованием, обеспечивающим лучшие условия для эффективных и безопасных тренировок.</p>
+    <p class="p1">Ты найдёшь у нас сообщество целеустремлённых спортсменов, которые будут вдохновлять и мотивировать тебя каждый день.</p>
+    <p class="p1">Благодаря структурированному подходу и постоянной поддержке наших тренеров ты быстро увидишь результаты в силе, выносливости и технике.</p>
+    
+
+
+<a href="#" class="btn join-btn">Забронируйте бесплатное обучение</a>
+</div>
+   </section>
+
+   <section class="review" id="trainer">
+    <div class="review-box">
+    <h2 class="heading"  data-aos="zoom-in-down">Наши  <span>тренеры</span></h2>
+    
+    <div class="wrapper"  data-aos="zoom-in-up">
+        <div class="antrenor-item">
+            <img src="imagini/antrenor2.jpg" alt="">
+            <h2>Ian Chirilov</h2>
+        
+            <p>Тренер с 3-летним опытом в сфере и работе с детьми.  
+                Ян — увлечённый и опытный тренер по боксу, посвятивший себя развитию бойцов как с технической, так и с ментальной стороны. Благодаря дисциплинированному и мотивирующему подходу, Ян помогает спортсменам развивать силу, скорость и стратегию в ринге. Независимо от того, тренирует ли он новичков или продвинутых боксёров, он делает упор на труд, настойчивость и уважение, превращая каждую тренировку в шаг к совершенству.</p>
+                
+        </div>
+        
+    
+             <div class="antrenor-item">
+            <img src="imagini/antrenor1.jpg" alt="">
+            <h2>Drobot Cristian</h2>
+        
+            <p>Господин Кристиан — тренер по боксу с большим опытом, известный своей дисциплиной, преданностью делу и вниманием к деталям. Благодаря сбалансированному подходу, сочетающему технику, силу и стратегию, он формирует всесторонне развитых спортсменов, готовых как физически, так и морально к вызовам ринга. Независимо от того, тренирует ли он новичков или опытных бойцов, господин Кристиан делает акцент на труде, уважении и решимости, превращая каждую тренировку в урок мастерства.</p>
+
+        </div>
+    
+    </div>
+    </div>
+    </section>
+
+   
+
+
+
+
+
+
+
+
+
+
+   <section class="plans" id="plans">
+<h2 class="heading"  data-aos="zoom-in-down">Наши  <span>подписки</span></h2>
+
+<br>
+<br>
+<br>
+<div class="plans-content">
+
+    <div class="box">
+<h3>Групповые подписки</h3>
+<h2><span>500 MDL/месяц</span></h2>
+<ul>
+    Тренировки в группе включают в себя:
+    <br><br>
+    <li>физическую подготовку</li>
+    <li>спарринги</li>
+    <li>тренировки на боксёрском мешке</li>
+    <li>мотивацию и командную сплочённость</li>
+  </ul>
+  <a href="#"></a>
+</div>
+    <div class="box">
+        <h3>Индивидуальные абонементы</h3>
+<h2><span>900 лей/месяц</span></h2>
+<ul>
+    Индивидуальные тренировки включают в себя: 
+    <br><br>
+    <li>интенсивную разминку</li>
+    <li>упражнения на подвижность</li>
+    <li>комбинации ударов и защиту</li>
+    <li>переход к контролируемому спаррингу</li> 
+</ul>
+
+        <a href="#"></a>
+            </div>
+</div>
+
+
+   </section>
+   <section class="contact" id="contacte">
+    <h2 class="heading">Связаться с нами</h2>
+    <div class="contact-content">
+        <div class="contact-info">
+            <h3>Контактная информация</h3>
+<br>
+<p><strong>Email:</strong> lionclub.ialoveni@gmail.com</p>
+<p><strong>Телефон:</strong> 0694 83 332</p>
+<p><strong>Адрес:</strong> Alexandru Cel Bun 29, Ialoveni, Moldova</p>
+<p><strong>График работы:</strong> Понедельник–Суббота: 16:00–18:00</p>
+
+        </div>
+        <br>
+        <br>
+        
+        <div class="contact-form" id="contactForm">
+            <h3>Отправить сообщение</h3>
+            <form action="#" method="post">
+                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea name="message" id="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+                <button type="submit" class="btn">Отправлять</button>
+            </form>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d702.8789553245598!2d28.768350751689006!3d46.95956893917098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1739958612754!5m2!1sen!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="review" id="review">
+<div class="review-box">
+<h2 class="heading"  data-aos="zoom-in-down">Отзывы  <span>клиентов</span></h2>
+
+<div class="wrapper"  data-aos="zoom-in-up">
+    <div class="review-item">
+        <img src="imagini/andrei.jpg" alt="">
+        <h2>Andrei</h2>
+        <div class="rating">
+            <i class='bx bxs-star' id="Star"></i>
+            <i class='bx bxs-star' id="Star"></i>
+            <i class='bx bxs-star' id="Star"></i>
+            <i class='bx bxs-star' id="Star"></i>
+            <i class='bx bxs-star' id="Star"></i>
+        </div>
+        <p>Лучшая боксерская школа в городе! Тренеры очень преданы своему делу и мотивируют тебя превзойти собственные пределы. Я заметил(а) невероятное улучшение своей выносливости и техники. Рекомендую на 100%!</p>
+    </div>
+    
+    <div class="review-item">
+        <img src="imagini/elena5.avif" alt="">
+        <h2>Elena</h2>
+        <div class="rating">
+            <i class='bx bxs-star' id="Star"></i>
+            <i class='bx bxs-star' id="Star"></i>
+            <i class='bx bxs-star' id="Star"></i>
+            <i class='bx bxs-star' id="Star"></i>
+            <i class='bx bxs-star' id="Star"></i>
+        </div>
+        <p>Невероятная атмосфера! Я пришёл(пришла) без опыта, и благодаря профессиональным тренерам быстро освоил(а) базовые техники. Коллеги очень дружелюбные, а каждая тренировка — это вдохновляющий опыт!</p>
+    </div>
+         <div class="review-item">
+        <img src="imagini/bogdan2.jpg" alt="">
+        <h2>Bogdan</h2>
+        <div class="rating">
+            <i class='bx bxs-star' id="Star"></i>
+            <i class='bx bxs-star' id="Star"></i>
+            <i class='bx bxs-star' id="Star"></i>
+            <i class='bx bxs-star' id="Star"></i>
+            <i class='bx bxs-star' id="Star"></i>
+        </div>
+        <p>Место, где действительно есть прогресс! Зал хорошо оснащён, расписание гибкое, а тренировки интенсивные и эффективные. Делается большой акцент на дисциплину и исправление ошибок, что очень помогает!</p>
+    </div>
+
+</div>
+</div>
+</section>
+
+<footer class="footer">
+
+<div class="social">
+    <a href="https://www.facebook.com/lionialoveni/"><i class='bx bxl-facebook' ></i></a>
+    <a href="https://www.instagram.com/lion_ialoveni/"><i class='bx bxl-instagram' ></i></a>
+
+</div>
+<div class="footerr">
+    <li><a href="#services">Услуги</a></li>
+<li><a href="#about">О нас</a></li>
+<li><a href="#plans">Цены</a></li>
+<li><a href="#contacte">Контакты</a></li></div>
+<p class="copyright">
+    &copy; CopyRight 2025. Acest website a fost realizat în cadrul competiției ”Tekwill Junior Ambassadors” organizată de proiectul ”Tekwill în Fiecare Școală” și nu reflectă neapărat opinia proiectului.
+</p>
+
+</footer> 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 300,
+    duration: 1400,
+  });
+</script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="./JavaScript/script3.js"> </script>
+</body>
+</html> 
